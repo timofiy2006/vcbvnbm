@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="code.js"></script>
+    <title>Енергетичний калькулятор</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <label for="activePower">Активна потужність (P):</label>
+      <input
+        type="number"
+        id="activePower"
+        placeholder="Введіть активну потужність (вати)"
+      />
+
+      <label for="reactivePower">Реактивна потужність (Q):</label>
+      <input
+        type="number"
+        id="reactivePower"
+        placeholder="Введіть реактивну потужність (вари)"
+      />
+
+      <button onclick="calculateEnergyLoss()">
+        Розрахувати втрати енергії
+      </button>
+
+      <div id="result"></div>
+    </div>
+  </body>
+</html>
